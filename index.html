@@ -2,22 +2,24 @@
 layout: default
 ---
 
-<div class="home">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jetsetter Concierge Travel Planning</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Quicksand:300,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="C:\Users\u167723\Documents\Personal\Coding\Colours part 2.css">
+</head>
+<body>
 
-  <h1 class="page-heading">Posts</h1>
+  <div class="header">
+    <div id="header-text", class="partner"> <!--Add an id to this div -->
+      <h1>Lucy and Paul's Wedding</h1>
+      <h2>26/05/2018</h2>
+    </div>
+  </div>
+  
+  
+</body>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</html>
